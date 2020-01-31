@@ -27,9 +27,9 @@ Pizza.prototype.showPizza = function(showOutputDiv){
 }
 
 $(document).ready(function(){
-    $("button#btn1").click(function(event){
+    $("button#size1").click(function(event){
         event.preventDefault();
-        var pizza = new Pizza();
+        var pizza = new Pizza("size1");
         pizza.sizePrice();
         var inputTop = $("input:radio[name=topping]:checked").val(); 
         pizza.addTopping(inputTop)
