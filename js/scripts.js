@@ -1,7 +1,7 @@
 function Pizza(size){
     this.size = size,
     this.price = 15,
-    this.topping = ""
+    this.toppings = ""
 }
 
 Pizza.prototype.sizePrice = function() {
@@ -13,7 +13,7 @@ Pizza.prototype.sizePrice = function() {
 }
 
 Pizza.prototype.addTopping = function(inputTop){
-    this.topping = inputTop;
+    this.toppings = inputTop;
    
 }
 
@@ -22,16 +22,16 @@ Pizza.prototype.showPizza = function(showOutputDiv){
     var pizzaDetails = "";
     pizzaDetails += `<p> Thank you for purchasing on of our pizzas</p>`
     pizzaDetails += `<p> $${this.price}</p>`;
-    pizzaDetails += `<p>${this.topping}</p>`;
+    pizzaDetails += `<p>${this.toppings}</p>`;
     showOutputMsg.html(pizzaDetails);
 }
 
 $(document).ready(function(){
     $("button#btn1").click(function(event){
         event.preventDefault();
-        var pizza = new Pizza("size1");
+        var pizza = new Pizza();
         pizza.sizePrice();
-        var inputTop = $("input:radio[name=topping]:checked").val();
+        var inputTop = $("input:radio[name=topping]:checked").val(); 
         pizza.addTopping(inputTop)
         pizza.showPizza($("#grandTotal"));
     });
