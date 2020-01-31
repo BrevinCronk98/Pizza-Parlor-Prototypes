@@ -23,6 +23,8 @@ Pizza.prototype.showPizza = function(showOutputDiv){
     pizzaDetails += `<p> Thank you for purchasing on of our pizzas</p>`
     pizzaDetails += `<p> $${this.price}</p>`;
     pizzaDetails += `<p>${this.toppings}</p>`;
+    pizzaDetails += `<p>${this.toppings}</p>`;
+    pizzaDetails += `<p>${this.toppings}</p>`;
     showOutputMsg.html(pizzaDetails);
 }
 
@@ -30,6 +32,14 @@ $(document).ready(function(){
     $("button#size1").click(function(event){
         event.preventDefault();
         var pizza = new Pizza("size1");
+        pizza.sizePrice();
+        var inputTop = $("input:radio[name=topping1]:checked").val(); $("input:radio[name=topping2]:checked").val();$("input:radio[name=topping3]:checked").val();  
+        pizza.addTopping(inputTop)
+        pizza.showPizza($("#grandTotal"));
+    });
+    $("button#size2").click(function(event){
+        event.preventDefault();
+        var pizza = new Pizza("size2");
         pizza.sizePrice();
         var inputTop = $("input:radio[name=topping]:checked").val(); 
         pizza.addTopping(inputTop)
