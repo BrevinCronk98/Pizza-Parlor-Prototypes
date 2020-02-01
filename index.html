@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="jumbotron">
-        <h1>Marios Excellent Pizza Parlor</h1>
-        <p>We make the best pizzas in the world, go ahead and get your order started.</p>
+        <h1 class="header">Marios Excellent Pizza Parlor</h1>
+        <p class="one">We make the best pizzas in the world, go ahead and get your order started.</p>
     </div>
     <form id="forPizza">
         <div class="container">
@@ -18,15 +18,13 @@
                 <div class="col-md-4">
                     <h2>Toppings</h2>
                     <p>Pick out your pizzas toppings!</p>
-                    <input type="radio" id="top1" name="topping1" value="Pepperoni">Pepperoni
+                    <input type="radio" id="top1" name="topping" value="Pepperoni">Pepperoni
                     <br>
-                    <input type="radio" id="top2" name="topping2" value="Olives"> Olives
+                    <input type="radio" id="top2" name="topping" value="Olives"> Olives
                     <br>
-                    <input type="radio" id="top3" name="topping3" value="Chicken"> Chicken
+                    <input type="radio" id="top3" name="topping" value="Chicken"> Chicken
                     <br>
-                    <p class="one">Your total for your toppings is 1 dollar.</p>
-                    <p class="two">Your total for your toppings is 2 dollars.</p>
-                    <p class="three">Your total for your toppings is 3 dollars.</p>
+                    
                 </div>
                 <div class="col-md-4">
                     <h2>Size</h2>
@@ -35,8 +33,7 @@
                     <br>
                     <button type="submit" id="size2" name="size2">18 inch</button>
                     <br>
-                    <p class="sze1">Your pizza size will be 7 dollars</p>
-                    <p class="sze2">Your pizza size will be 9 dollars</p>
+                    
                 </div>
                 <p id="grandTotal"></p>
             </div>

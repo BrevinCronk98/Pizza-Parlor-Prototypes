@@ -1,27 +1,20 @@
-.sauce {
-    display: none;
+.header {
+    font-family: cursive;
+
 }
 
 .one {
-    display: none;
+    font-family: cursive;
+}
+body{
+   background-color: bisque; 
 }
 
-.two {
-    display: none;
+#size1 {
+    background-color: lightgreen;
+    border-radius: 10px;
 }
-
-.three {
-    display: none;
-}
-
-.four {
-    display: none;
-}
-
-.sze1 {
-    display: none;
-}
-
-.sze2 {
-    display: none;
+#size2 {
+    background-color: lightgreen;
+    border-radius: 10px;
 }
