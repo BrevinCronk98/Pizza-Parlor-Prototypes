@@ -16,7 +16,7 @@
 ### So far I am unable to make it so you can pick multiple toppings. It only works with 1 topping. Will correct soon.
 
 ## Setup Instructions
-### You can access my live webpage via GH-Pages at
+### You can access my live webpage via GH-Pages at https://brevincronk98.github.io/Pizza-Parlor-Prototypes/
 ### If you would like to you can also download my code as a zip file and modify it yourself.
 
 ## Copyright (c) 2020 Brevin Cronk
